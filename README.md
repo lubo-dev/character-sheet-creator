@@ -1,2 +1,4 @@
-# CharacterSheetCreator
+#  Character Sheet Creator
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 A character sheet creator for table top games that can export to PDF
