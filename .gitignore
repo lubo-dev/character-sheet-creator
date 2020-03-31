@@ -1,0 +1,6 @@
+## IntelliJ IDEA config foler
+.idea
+
+node_modules
+
+dist
