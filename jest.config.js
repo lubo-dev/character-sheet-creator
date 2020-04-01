@@ -4,5 +4,6 @@ module.exports = {
     "src/**/*.{js,vue}",
     "!**/plugins/**",
     "!/node_modules/"
-  ]
+  ],
+  setupFiles: ['./jest.setup.js']
 };
