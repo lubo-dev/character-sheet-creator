@@ -1,7 +1,11 @@
 language: node_js
 node_js:
-  - "12"
+- '12'
 before_script:
-  - npm install
+- npm install
 script:
-  - npm run test
+- npm run test
+deploy:
+  provider: heroku
+  api_key:
+    secure: PDaDPTCXIPxLt3j3ze9Jo1mpe1iLTqUt8RAPfCrqaEAGnBMt+mybtg0JPrXgIZi1hHjn1ejRY+Sw10fiaKKlByp52ua2pFsl/8zpKkBI4JetBYDENfxHJc7VI+MzYDBWexNU5XBa/YWNwtRqi/ahTK3csCiE8ISTa+lMyWm1RjUVISZJGWRUoaIv3YgkCzzaUlD+4lCOt0GntcH9cl20YlKN9p3IWhIRTiGF4anCmQmocpIHS+jfZdzfXr3L85d+jx26mqBWCLQEZL1EgPJvt8s9IGun2V87rclA3zdTz/LK8+uEellIlFOLUBhiEAlkc3TGS8djD1epymeFBcywHBFKTbnIPRErpb0IdjtCGjj63bqup3z8h9rioZ92O7sA4pMxFQexEkVoHZDp8fqKiotRkV4RtLcAOoDx2knjBaEWyTVKnfsp+nzaysyodXRoSQO7z2Im48qi6Q7lqaRX/3jD+mkX4m/wX5O4ACgQDL7WwnfG4cdnE3n1rzOAW/cvn7vYyHDcq0jCeArQlzEDcfSnyWU2yFyVXcDY8OixycsZCSoWY6W4eoVYoLDXAtME0y0hy/4I2M0p2uTW5t+W0yTKaVq1HJygiohHZ6FWVaepb97hlTKQkC5vhWiqe3FkaqZhwUP+iIIXY39A991Ca84BEiJjtlenHuGh6WLHjCw=
