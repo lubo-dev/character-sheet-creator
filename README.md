@@ -34,6 +34,12 @@ npm run build
 npm run test
 ```
 
+with code coverage
+
+```
+npm run test:cov
+```
+
 ### Lints and fixes files
 ```
 npm run lint
