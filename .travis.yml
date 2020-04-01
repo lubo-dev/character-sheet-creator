@@ -4,9 +4,7 @@ node_js:
 before_script:
  - npm install
 script:
- - npm run test:cov
-after_script:
- - coveralls
+ - npm run coveralls
 deploy:
   provider: heroku
   api_key:
