@@ -1,5 +1,6 @@
 #  Character Sheet Creator
 [![Build Status](https://travis-ci.org/L-Bolz/character-sheet-creator.svg?branch=master)](https://travis-ci.org/L-Bolz/character-sheet-creator)
+[![Coverage Status](https://coveralls.io/repos/github/L-Bolz/character-sheet-creator/badge.svg?branch=master)](https://coveralls.io/github/L-Bolz/character-sheet-creator?branch=master)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 A character sheet creator for table top games that can export to PDF
