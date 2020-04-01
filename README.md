@@ -21,7 +21,7 @@ You should also set the `PORT` to make sure that the localStorage remains the sa
 
 Afterwards run the dev server:
 ```
-npm run serve
+npm run start:dev
 ```
 
 ### Build for production
