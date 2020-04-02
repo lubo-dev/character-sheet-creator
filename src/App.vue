@@ -2,21 +2,8 @@
   <v-app id="inspire">
     <nav-bar />
 
-    <v-content>
-      <v-container
-        class="fill-height"
-        fluid
-      >
-        <v-row
-          align="center"
-          justify="center"
-        >
-          <v-col class="text-center">
-            <p>Work in progress</p>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-content>
+    <document />
+
     <v-footer
       color="red darken-3"
       app
@@ -32,10 +19,12 @@
 
 <script>
   import NavBar from "./components/NavBar";
+  import Document from "./components/Document"
 
   export default {
     components: {
-      NavBar
+      NavBar,
+      Document
     }
   }
 </script>
