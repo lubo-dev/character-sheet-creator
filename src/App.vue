@@ -1,32 +1,6 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawer"
-      clipped
-      app
-    >
-      <v-list dense>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon v-text="'$pdf'" />
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Convert to PDF</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-app-bar
-      app
-      color="red darken-3"
-      dark
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer">
-        <v-icon v-text="'$menu'" />
-      </v-app-bar-nav-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
-    </v-app-bar>
+    <nav-bar />
 
     <v-content>
       <v-container
@@ -53,9 +27,11 @@
 </template>
 
 <script>
+  import NavBar from "./components/NavBar";
+
   export default {
-    data: () => ({
-      drawer: null,
-    }),
+    components: {
+      NavBar
+    }
   }
 </script>
