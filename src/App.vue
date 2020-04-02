@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <nav-bar />
 
-    <document />
+    <editor />
 
     <c-footer />
   </v-app>
@@ -10,13 +10,13 @@
 
 <script>
   import NavBar from "./components/NavBar";
-  import Document from "./components/Document"
+  import Editor from "./components/Editor"
   import CFooter from "./components/Footer";
 
   export default {
     components: {
       NavBar,
-      Document,
+      Editor,
       CFooter
     }
   }

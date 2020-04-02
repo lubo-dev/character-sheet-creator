@@ -1,9 +1,9 @@
 import { shallowMount } from '@vue/test-utils'
-import Document from '@/components/Document.vue';
+import Editor from '@/components/Editor.vue';
 
-describe('Document.vue', () => {
+describe('Editor.vue', () => {
   it('renders "Work in progress"', () => {
-    const wrapper = shallowMount(Document);
+    const wrapper = shallowMount(Editor);
 
     expect(wrapper.text()).toContain('Work in progress')
   })
