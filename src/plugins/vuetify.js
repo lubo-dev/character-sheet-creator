@@ -9,6 +9,8 @@ export default new Vuetify({
         iconfont: 'fa',
         values: {
             pdf: 'far fa-file-pdf',
+            plus: 'fas fa-plus',
+            save: 'far fa-save',
         },
     },
 });

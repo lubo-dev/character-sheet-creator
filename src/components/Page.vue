@@ -1,5 +1,5 @@
 <template>
-    <div class="page" />
+    <div class="page mb-8" />
 </template>
 
 <style lang="scss" scoped>
