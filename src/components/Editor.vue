@@ -9,20 +9,24 @@
         justify="center"
       >
         <v-col class="text-center">
-          <p>Work in progress</p>
+          <editor-actions />
         </v-col>
-        <v-col >
-          <div class="page" />
+        <v-col>
+          <page />
         </v-col>
       </v-row>
     </v-container>
   </v-content>
 </template>
 
-<style lang="scss" scoped>
-  .page {
-    box-shadow: 0 0 3px #555555;
-    width: 595pt;
-    height: 842pt;
+<script>
+  import Page from './Page';
+  import EditorActions from './EditorActions'
+
+  export default {
+    components: {
+      Page,
+      EditorActions
+    }
   }
-</style>
+</script>
