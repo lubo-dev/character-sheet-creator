@@ -7,7 +7,7 @@
         <v-list dense>
             <v-list-item link>
                 <v-list-item-action>
-                    <v-icon>{{'$pdf'}}</v-icon>
+                    <v-icon>{{ '$pdf' }}</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
                     <v-list-item-title>Convert to PDF</v-list-item-title>

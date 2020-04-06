@@ -7,7 +7,7 @@
             dark
         >
             <v-app-bar-nav-icon @click.stop="$refs.SideBar.toggleSideBar()">
-                <v-icon>{{'$menu'}}</v-icon>
+                <v-icon>{{ '$menu' }}</v-icon>
             </v-app-bar-nav-icon>
             <v-toolbar-title>Character Sheet Creator</v-toolbar-title>
         </v-app-bar>
