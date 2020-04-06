@@ -1,7 +1,7 @@
 module.exports = {
-  "assetsDir": "assets",
-  "runtimeCompiler": true,
-  "transpileDependencies": [
-    "vuetify"
-  ]
+    "assetsDir": "assets",
+    "runtimeCompiler": true,
+    "transpileDependencies": [
+        "vuetify"
+    ]
 };

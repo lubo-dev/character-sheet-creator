@@ -1,3 +1,3 @@
 <template>
-  <p>Work in progress</p>
+    <p>Work in progress</p>
 </template>

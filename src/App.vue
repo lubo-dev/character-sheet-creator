@@ -1,23 +1,23 @@
 <template>
-  <v-app id="inspire">
-    <nav-bar />
+    <v-app id="inspire">
+        <nav-bar />
 
-    <editor />
+        <editor />
 
-    <c-footer />
-  </v-app>
+        <c-footer />
+    </v-app>
 </template>
 
 <script>
-  import NavBar from "./components/structure/NavBar";
-  import Editor from "./components/Editor"
-  import CFooter from "./components/structure/Footer";
+import NavBar from "./components/structure/NavBar";
+import Editor from "./components/Editor"
+import CFooter from "./components/structure/Footer";
 
-  export default {
+export default {
     components: {
-      NavBar,
-      Editor,
-      CFooter
+        NavBar,
+        Editor,
+        CFooter
     }
-  }
+}
 </script>
