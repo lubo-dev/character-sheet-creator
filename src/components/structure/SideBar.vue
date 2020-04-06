@@ -1,31 +1,29 @@
 <template>
     <v-navigation-drawer
-        v-model="isOpen"
         clipped
+        mini-variant
+        permanent
         app
     >
         <v-list dense>
-            <v-list-item link>
-                <v-list-item-action>
-                    <v-icon>{{ '$pdf' }}</v-icon>
-                </v-list-item-action>
-                <v-list-item-content>
-                    <v-list-item-title>Convert to PDF</v-list-item-title>
-                </v-list-item-content>
-            </v-list-item>
+            <v-tooltip right>
+                <template v-slot:activator="{ on }">
+                    <v-list-item
+                        link
+                        v-on="on"
+                    >
+                        <v-icon>{{ '$pdf' }}</v-icon>
+                    </v-list-item>
+                </template>
+                <span>Convert to PDF</span>
+            </v-tooltip>
         </v-list>
     </v-navigation-drawer>
 </template>
 
 <script>
 export default {
-    data: () => ({
-        isOpen: false,
-    }),
     methods: {
-        toggleSideBar() {
-            this.isOpen = !this.isOpen;
-        },
     },
 }
 </script>
