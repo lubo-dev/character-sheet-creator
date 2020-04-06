@@ -10,5 +10,5 @@ export default new Vuetify({
         values: {
             pdf: 'far fa-file-pdf',
         },
-    }
+    },
 });

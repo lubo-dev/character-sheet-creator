@@ -17,7 +17,7 @@ export default {
     components: {
         NavBar,
         Editor,
-        CFooter
-    }
+        CFooter,
+    },
 }
 </script>

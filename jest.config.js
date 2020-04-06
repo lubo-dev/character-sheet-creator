@@ -3,7 +3,7 @@ module.exports = {
     collectCoverageFrom: [
         "src/**/*.{js,vue}",
         "!**/plugins/**",
-        "!/node_modules/"
+        "!/node_modules/",
     ],
-    setupFiles: ['./jest.setup.js']
+    setupFiles: ['./jest.setup.js'],
 };

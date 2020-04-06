@@ -21,7 +21,7 @@ import SideBar from "./SideBar";
 
 export default {
     components: {
-        SideBar
+        SideBar,
     },
 }
 </script>

@@ -25,7 +25,7 @@ export default {
     methods: {
         toggleSideBar() {
             this.isOpen = !this.isOpen;
-        }
-    }
+        },
+    },
 }
 </script>
