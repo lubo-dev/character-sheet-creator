@@ -1,5 +1,8 @@
 module.exports = {
     'extends': 'plugin:vue/recommended',
+    'parserOptions': {
+        parser: 'babel-eslint',
+    },
     'rules': {
         'indent': ['error', 4],
         'vue/script-indent': ['error', 4],
