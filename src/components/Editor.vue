@@ -46,6 +46,7 @@
 <script>
 import Page from './Page';
 import EditorActions from './EditorActions'
+import PageData from "./data/PageData";
 
 export default {
     components: {
@@ -70,13 +71,5 @@ export default {
             localStorage.pages = JSON.stringify(this.pages);
         }, 
     },
-}
-
-class PageData {
-    order = undefined;
-
-    constructor(order) {
-        this.order = order;
-    }
 }
 </script>
