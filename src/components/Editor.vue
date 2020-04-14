@@ -60,12 +60,12 @@ export default {
         if (localStorage.pages) {
             this.pages = JSON.parse(localStorage?.pages);
         } else {
-            this.pages = [new PageData(1)];
+            this.pages = [new PageData(0)];
         }
     },
     methods: {
         addPage() {
-            this.pages.push(new PageData(this.pages.length + 1));
+            this.pages.push(new PageData(this.pages.length));
         },
         save() {
             localStorage.pages = JSON.stringify(this.pages);
