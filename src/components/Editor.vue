@@ -22,14 +22,6 @@
                     >
                         <v-btn
                             class="white--text"
-                            color="success"
-                            fab
-                            @click="save"
-                        >
-                            <v-icon>{{ '$save' }}</v-icon><!--Todo: move to sidebar-->
-                        </v-btn>
-                        <v-btn
-                            class="white--text"
                             color="red darken-3"
                             fab
                             @click="addPage"
@@ -46,7 +38,7 @@
 <script>
 import Page from './Page';
 import EditorActions from './EditorActions'
-import PageData from "./data/PageData";
+import Store from './data/Store';
 
 export default {
     components: {
@@ -54,22 +46,10 @@ export default {
         EditorActions,
     },
     data: () => ({
-        pages: null,
+        pages: Store.state.pages,
     }),
-    mounted() {
-        if (localStorage.pages) {
-            this.pages = JSON.parse(localStorage?.pages);
-        } else {
-            this.pages = [new PageData(0)];
-        }
-    },
     methods: {
-        addPage() {
-            this.pages.push(new PageData(this.pages.length));
-        },
-        save() {
-            localStorage.pages = JSON.stringify(this.pages);
-        }, 
+        addPage() {Store.addPage()},
     },
 }
 </script>
