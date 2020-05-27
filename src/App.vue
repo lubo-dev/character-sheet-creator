@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import NavBar from "./components/pageStructure/NavBar";
+import NavBar from "./components/websiteStructure/NavBar";
 import Editor from "./components/Editor"
-import CFooter from "./components/pageStructure/Footer";
+import CFooter from "./components/websiteStructure/Footer";
 
 export default {
     components: {
