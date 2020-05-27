@@ -2,7 +2,7 @@
     <div>
         <v-app-bar
             app
-            color="red darken-3"
+            color="red darken-3 app-bar"
             clipped-left
             dark
         >
@@ -12,6 +12,12 @@
         <side-bar ref="SideBar" />
     </div>
 </template>
+
+<style lang="scss" scoped>
+    .app-bar {
+        z-index: 10;
+    }
+</style>
 
 <script>
 import SideBar from "./SideBar";

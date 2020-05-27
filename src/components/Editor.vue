@@ -15,6 +15,7 @@
                     <page
                         v-for="page in pages"
                         :key="page.order"
+                        :order="page.order"
                     />
                     <v-row
                         align="center"
