@@ -4,7 +4,7 @@
             v-for="(element, key) in page.elements"
             :key="key"
             :element="element"
-            :containment="containment"
+            :target="$el"
         />
     </div>
 </template>
@@ -27,17 +27,6 @@ export default {
         a4Height: 1123,
         pageBottomMargin: 32,
     }),
-
-    computed: {
-        containment: function () {
-            return {
-                left: this.$el.getBoundingClientRect().left,
-                top: 88 + this.page.order * (this.a4Height + this.pageBottomMargin),
-                width: this.a4Width,
-                height: this.a4Height,
-            }
-        },
-    },
 
     mounted() {
         if (this.page.elements.length === 0) {

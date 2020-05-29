@@ -4,14 +4,14 @@ export default class ElementData {
 
     draggable = undefined;
     node = undefined;
-    containment = undefined;
+    target = undefined;
 
-    build(node, left, top, width, height) {
-        this.containment = {left, top, width, height};
+    build(node, target) {
+        this.target = target;
         this.node = node;
 
         this.draggable = new PlainDraggable(node, {
-            containment: this.containment,
+            target,
             zIndex: 9,
             autoScroll: true,
         });
