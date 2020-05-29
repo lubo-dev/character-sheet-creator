@@ -1,4 +1,4 @@
-import PageData from "../../src/components/data/PageData";
+import PageData from "../../src/components/page/PageData";
 import Store from '../../src/components/data/Store';
 
 beforeEach(() => {

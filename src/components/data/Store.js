@@ -1,4 +1,4 @@
-import PageData from './PageData';
+import PageData from '../page/PageData';
 
 class Store {
     state = {

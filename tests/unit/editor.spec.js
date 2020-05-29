@@ -1,6 +1,6 @@
 import {shallowMount} from '@vue/test-utils'
 import Editor from '@/components/Editor.vue';
-import PageData from "../../src/components/data/PageData";
+import PageData from "../../src/components/page/PageData";
 
 describe('Editor.vue', () => {
     it('addPage() adds a page to the data', () => {

@@ -15,7 +15,7 @@
                     <page
                         v-for="page in pages"
                         :key="page.order"
-                        :order="page.order"
+                        :page="page"
                     />
                     <v-row
                         align="center"
@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import Page from './Page';
+import Page from './page/Page';
 import EditorActions from './EditorActions'
 import Store from './data/Store';
 
