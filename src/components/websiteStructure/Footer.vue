@@ -7,6 +7,6 @@
             href="https://github.com/L-Bolz/character-sheet-creator"
             class="white--text mr-3"
         >About</a>
-        <span class="white--text">&copy; 2020</span>
+        <span class="white--text">&copy; 2020 - Present Lukas Bolz</span>
     </v-footer>
 </template>
