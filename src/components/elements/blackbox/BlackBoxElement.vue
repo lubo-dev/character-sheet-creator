@@ -11,14 +11,14 @@ export default {
             type: BlackBoxElementData,
             required: true,
         },
-        target: {
+        container: {
             type: HTMLElement,
             required: true,
         },
     },
 
     mounted() {
-        this.element.build(this.$el, this.target);
+        this.element.initialize(this.$el, this.container);
     },
 }
 </script>

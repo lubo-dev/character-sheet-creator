@@ -2,7 +2,7 @@
     <black-box-element
         v-if="element instanceof BlackBoxElementData"
         :element="element"
-        :target="target"
+        :container="container"
     />
 </template>
 
@@ -18,7 +18,7 @@ export default {
             type: Object,
             required: true,
         },
-        target: {
+        container: {
             type: HTMLElement,
             required: true,
         },

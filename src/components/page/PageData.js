@@ -3,6 +3,7 @@ import BlackBoxElementData from "../elements/blackbox/BlackBoxElementData";
 export default class PageData {
     order = undefined;
     elements = [];
+    axes = [];
 
     constructor(order) {
         this.order = order;
