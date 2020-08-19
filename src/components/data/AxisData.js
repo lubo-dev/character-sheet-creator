@@ -5,14 +5,22 @@ export default class AxisData {
     type = undefined;
     container = undefined;
     node = undefined;
+    length = undefined;
 
     constructor(type, container) {
         this.type = type;
         this.container = container;
+        this.length = 300;
     }
 
     initialize(node, elements) {
         this.node = node;
+
+        if (this.type === 'x') {
+            this.node.style.width = `${this.length}px`;
+        } else {
+            this.node.style.height = `${this.length}px`;
+        }
 
         this.draggable = new PlainDraggable(node, {
             target: this.container,

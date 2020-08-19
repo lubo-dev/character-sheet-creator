@@ -30,25 +30,15 @@ export default {
         },
     },
 
-    data: () => ({
-        a4Width: 793,
-        a4Height: 1123,
-        pageBottomMargin: 32,
-    }),
-
     mounted() {
         if (this.page.elements.length === 0) {
-            this.addElement();
+            this.page.addElement('blackbox');
         }
 
         if (this.page.axes.length === 0) {
             this.page.axes.push(new AxisData('y', this.$el));
             this.page.axes.push(new AxisData('x', this.$el));
         }
-    },
-
-    methods: {
-        addElement() {this.page.addElement('blackbox')},
     },
 }
 </script>
