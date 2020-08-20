@@ -8,11 +8,13 @@
             :class="axis.type === 'x' ? 'horizontal-axis-input' : 'vertical-axis-input'"
         >
             <v-text-field
-                :value="length"
+                :value="axis.length"
                 :placeholder="'Length'"
                 :type="'number'"
                 dense
+                :error-messages="err"
                 @change="updateAxisLength"
+                @keyup.esc.exact="toggleVisibility"
             />
         </div>
     </div>
@@ -36,7 +38,7 @@ export default {
 
     data: () => ({
         showSettings: false,
-        length: 0,
+        err: '',
     }),
 
     mounted() {
@@ -46,17 +48,22 @@ export default {
 
     methods: {
         toggleVisibility() {
+            this.err = ''
             this.showSettings = !this.showSettings;
         },
 
         updateAxisLength(event) {
-            if (this.axis.type === 'x') {
+            if (this.axis.type === 'x' && event <= 793 && event > 0) {
                 this.axis.node.style.width = `${event}px`;
-
-            } else {
+                this.axis.length = event;
+                this.toggleVisibility();
+            } else if (this.axis.type === 'y' && event <= 1123 && event > 0) {
                 this.axis.node.style.height = `${event}px`;
+                this.axis.length = event;
+                this.toggleVisibility();
+            } else {
+                this.err = 'Too high'
             }
-            this.showSettings = false;
         },
     },
 }
