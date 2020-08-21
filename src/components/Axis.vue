@@ -1,7 +1,7 @@
 <template>
     <div
         :class="axis.type === 'x' ? 'horizontal-axis' : 'vertical-axis'"
-        @click.alt.exact="toggleVisibility"
+        @click.alt.exact="toggleSettingsVisibility"
     >
         <div
             v-if="showSettings"
@@ -14,7 +14,7 @@
                 dense
                 :error-messages="err"
                 @change="updateAxisLength"
-                @keyup.esc.exact="toggleVisibility"
+                @keyup.esc.exact="toggleSettingsVisibility"
             />
         </div>
     </div>
@@ -47,7 +47,7 @@ export default {
     },
 
     methods: {
-        toggleVisibility() {
+        toggleSettingsVisibility() {
             this.err = ''
             this.showSettings = !this.showSettings;
         },
@@ -56,11 +56,11 @@ export default {
             if (this.axis.type === 'x' && event <= 793 && event > 0) {
                 this.axis.node.style.width = `${event}px`;
                 this.axis.length = event;
-                this.toggleVisibility();
+                this.toggleSettingsVisibility();
             } else if (this.axis.type === 'y' && event <= 1123 && event > 0) {
                 this.axis.node.style.height = `${event}px`;
                 this.axis.length = event;
-                this.toggleVisibility();
+                this.toggleSettingsVisibility();
             } else {
                 this.err = 'Too high'
             }
