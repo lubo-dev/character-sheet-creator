@@ -35,7 +35,7 @@
     "eslint-plugin-vue": "^6.1.2",
     "lint-staged": "^9.5.0",
     "m-class-list": "^1.1.9",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "plain-draggable": "^2.5.12",
     "pointer-event": "^1.0.0",
     "prettier": "^1.19.1",
